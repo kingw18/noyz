@@ -12,16 +12,16 @@ const RecommendationBanner = ({
   recommendations: Recommendation[];
 }) => {
   return (
-    <Card className="bg-green-50 p-4 rounded-lg">
+    <Card className="bg-card border-border shadow-lg">
       <CardHeader>
-        <CardTitle>Recommended Quiet Spots</CardTitle>
+        <CardTitle className="text-primary">Recommended Quiet Spots</CardTitle>
       </CardHeader>
       <CardContent className="max-h-48 overflow-y-auto">
         <div className="grid gap-4">
           {recommendations.map((restaurant) => (
-            <div key={restaurant.id}>
-              <h3 className="text-lg font-semibold">{restaurant.name}</h3>
-              <p>{restaurant.description}</p>
+            <div key={restaurant.id} className="space-y-1">
+              <h3 className="text-lg font-semibold text-card-foreground">{restaurant.name}</h3>
+              <p className="text-muted-foreground">{restaurant.description}</p>
             </div>
           ))}
         </div>
