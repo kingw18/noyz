@@ -1,5 +1,6 @@
 import RestaurantList from "@/components/RestaurantList";
 import RecommendationBanner from "@/components/RecommendationBanner";
+import restaurantsData from "@/lib/data/restaurants.json";
 
 const RestaurantsPage = () => {
   // Filter for quieter restaurants as recommendations (e.g., noise level 1-2)
